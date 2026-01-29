@@ -4,7 +4,24 @@
 <p>Машинное обучение на <code>Brainfuck</code>. Потому что можно. <br>Самый бесполезный проект в истории GitHub!</p>
 </div>
 
-Сейчас вы видите на 99.99% навайбкоденный ML фреймворк на Brainfuck, цель которого — доказать, что это по-настоящему полный по Тьюрингу язык, на котором можно сделать AGI.
+Сейчас вы видите на 99.99% навайбкоденный ML фреймворк на [Brainfuck](https://ru.wikipedia.org/wiki/Brainfuck), цель которого — доказать, что это по-настоящему полный по Тьюрингу язык, на котором можно написать AGI. Реализация любого сложного компонента фреймворка сделана на Brainfuck с использованием LLM (`ChatGPT 5.2`)
+
+<div align="center">
+<table>
+  <tr>
+    <td align="center">
+      <img src="img/regression.png" height="200px">
+      <br>
+      <strong>Regression</strong>
+    </td>
+    <td align="center">
+      <img src="img/plotting.png" height="200px">
+      <br>
+      <strong>Plotting</strong>
+    </td>
+  </tr>
+</table>
+</div>
 
 ## Установка
 ```cmd
@@ -30,7 +47,7 @@ print(reg.predict(10))
 Визуализировать точки и регрессию:
 
 ```python
-from bflearn.viz import reg_plot
+from bflearn.plot import reg_plot
 
 reg_plot(x=x, y=y, w=reg.w, b=reg.b)
 ```
